@@ -1,0 +1,51 @@
+/*#f9a91a laboratoria
+#f5f5f0 color de fondo
+#e0e0d1 color de hover
+#333 color de active
+font-family sans serif*/
+body{
+	font-family: sans-serif;
+}
+nav{
+	/*outline: 1px solid red;*/
+	width: 200px;
+}
+ul{
+	/*outline: 1px solid yellow;*/
+	list-style: none;
+	margin:0;
+	padding:0;
+	line-height: 30px;
+}
+li{
+	/*outline: 1px solid red;*/
+	background:#f5f5f0;
+}
+/* estados de enlaces: loVe/hAte= link, visited, hover, active;*/
+a{
+	display:block;
+	text-decoration: none;
+	color: #000;
+	padding-left: 10px;
+}
+a:hover{/*cambiar color al pasar con el mouse o puntero*/
+	background:#e0e0d1;
+}
+a:active{
+	background: #333;
+	color: #fff;
+}
+ul li:first-child{/*más especifico*/
+	background:#f9a91a;
+}
+ul li:first-child a{
+	color:#fff;
+}
+ul li:first-child a:hover{/* cambiar color letra*/
+	color:#000;
+}
+ul li:first-child a:active{/*cambiar color fondo*/
+	color:#fff;
+}
+
+

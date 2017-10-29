@@ -1,0 +1,40 @@
+/*color de fondo #2e2e2a
+color de hover #f9a91a */
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	/*outline: 1px solid yellow;*/
+}
+ul{/* está ocupando el mismo espacio que etiqueta nav*/
+	/*outline: 1px solid blue;*/
+	list-style: none;
+	padding:0;
+	margin:0;
+	background:#2e2e2a;
+	line-height: 40px;
+	overflow: auto;
+
+}
+li{
+	/*outline: 1px solid red;*/
+	width: 100px;
+	/*display: inline-block;*/
+	float:left;/* sacar estructura de bloque a la etiqueta contenedor
+	para evitar esto hay que colocar propiedad overflow, devolviendo 
+	contexto de bloque a ul.*/
+
+	text-align: center;/* en función al espacio que contiene*/
+}
+a{
+	/*outline: 1px solid green;*/
+	text-decoration: none;
+	display: block;/* toda la superficie puede ser linkeable*/
+	color: #fff;
+}
+a:hover{
+background: #f9a91a;
+color: #000000;
+}
+
